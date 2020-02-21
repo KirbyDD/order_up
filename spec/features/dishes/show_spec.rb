@@ -14,5 +14,6 @@ RSpec.describe "As a visitor to dish show page", type: :feature do
     expect(page).to have_content(ingred1.name)
     expect(page).to have_content(ingred2.name)
     expect(page).to have_content(ingred3.name)
+    expect(page).to have_content("Total Calories: 500")
   end
 end
